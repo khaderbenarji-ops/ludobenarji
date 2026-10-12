@@ -1,0 +1,6 @@
+{
+  "name": "Ludo Master Royale",
+  "description": "Authentic, feature-packed Ludo board game featuring Play vs Computer, Pass & Play, Local Multiplayer, customized avatars, realistic rules, and rich audio-visual effects.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

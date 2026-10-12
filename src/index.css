@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .grid-cols-15 {
+    grid-template-columns: repeat(15, minmax(0, 1fr));
+  }
+  .grid-rows-15 {
+    grid-template-rows: repeat(15, minmax(0, 1fr));
+  }
+  .col-start-1 { grid-column-start: 1; }
+  .col-start-7 { grid-column-start: 7; }
+  .col-start-10 { grid-column-start: 10; }
+  .col-end-7 { grid-column-end: 7; }
+  .col-end-10 { grid-column-end: 10; }
+  .col-end-16 { grid-column-end: 16; }
+
+  .row-start-1 { grid-row-start: 1; }
+  .row-start-7 { grid-row-start: 7; }
+  .row-start-10 { grid-row-start: 10; }
+  .row-end-7 { grid-row-end: 7; }
+  .row-end-10 { grid-row-end: 10; }
+  .row-end-16 { grid-row-end: 16; }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Custom Scrollbar for Avatar Grid */
+.scrollbar-thin::-webkit-scrollbar {
+  width: 6px;
+}
+.scrollbar-thin::-webkit-scrollbar-track {
+  background: rgba(15, 23, 42, 0.6);
+  border-radius: 9999px;
+}
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background: rgba(245, 158, 11, 0.4);
+  border-radius: 9999px;
+}
+.scrollbar-thin::-webkit-scrollbar-thumb:hover {
+  background: rgba(245, 158, 11, 0.7);
+}
